@@ -1,0 +1,116 @@
+body {
+  background: url(./images/pexels-roberto-shumski-1903702.jpg) center no-repeat;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* ################ TITLE ################*/
+.container-title {
+  text-align: center;
+}
+
+h1#title {
+  font-size: 2em;
+}
+
+p#description {
+  font-size: 1.3em;
+}
+
+.container-title {
+    margin: 20px 0;
+}
+
+/* ################ GENERAL INPUT ################*/
+
+input,
+#dropdown,
+textarea {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+option {
+  background-color: #304560;
+}
+
+input.input-contact::placeholder,
+textarea::placeholder {
+  color: #fff;
+}
+
+input,
+#dropdown {
+  padding: 10px 0;
+  border-radius: 8px;
+}
+
+/* ################ GENERAL PARAGRAPHS ################*/
+div > .text-checkbox,
+p.title-select,
+p.title-radio {
+  font-size: 1em;
+}
+
+/* ################ FORM ################*/
+#survey-form {
+  background-color: rgba(11, 11, 11, 0.365);
+  width: 40%;
+  padding: 30px;
+}
+
+#survey-form > div {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+p {
+  margin-bottom: 10px;
+}
+/* ################ FORM CONTACT ################*/
+.container-inner-contact {
+  margin-top: 15px;
+}
+
+#name, #email, #number {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#name, #email, #number::placeholder {
+  padding-left: 10px;
+}
+
+/* ################ TEXTAREA ################*/
+#textarea,
+button#submit {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+button[type="submit"] {
+  font-family: Poppins;
+  font-weight: 500;
+  background-color: #37af65;
+  color: #fff;
+  border: none;
+}
+
+button[type="submit"]:hover {
+  background-color: #23613b;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 950px) {
+  #survey-form {
+    width: 70%;
+  }
+}
